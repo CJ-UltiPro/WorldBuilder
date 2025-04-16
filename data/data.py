@@ -1,4 +1,5 @@
-all_list = ['landscapes', 'seascapes', coastal]
+all_list = ['landscapes', 'seascapes', 'coastal', 'features']
+
 
 landscapes = ['Island',
 'Mountain',
@@ -240,3 +241,34 @@ traits = {'hot':['Caldera', 'Volcanic Black Sand','Lava', 'Dunesea', 'Volcanic F
           }
 
 rules = {'conflict':[('hot', 'cold'),('wet', 'dry')]}
+
+landscape_subtypes = {
+    'Island':landscapes_island,
+    'Mountain':landscapes_mountain,
+    'Plains':landscapes_plain,
+    'Unusual':landscapes_unusual,
+    'Swamp':landscapes_swamp,
+    'Forested':landscapes_forested,
+    'Arid':landscapes_arid,
+    'Arctic':landscapes_arctic,
+    'Road':landscapes_road,
+    'Hills':landscapes_hill,
+    'River':landscapes_river
+}
+
+seascapes_subtypes = {
+    'Oceanic':seascapes_oceanic,
+    'Landlike':seascapes_landlike,
+    'Arid':seascapes_arid,
+    'Unusual':seascapes_unusual
+}
+
+coastal_subtypes = {
+    'Muddy':coastal_muddy,
+    'Beach':coastal_beach,
+    'Cliffs':coastal_cliff,
+    'Flora':coastal_flora,
+    'Artificial':coastal_artificial
+}
+
+
